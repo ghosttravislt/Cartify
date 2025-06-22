@@ -566,7 +566,7 @@
 }
 
 /* smaller screens  */
-@media screen and (max-width: 527px) {
+@media screen and (max-width: 596px) {
   .Icons-cont {
     flex-direction: column;
     align-items: flex-start;
@@ -692,7 +692,7 @@
     background: #f8f9fa;
     border-radius: 16px;
     padding: 25px;
-    width: 300px;
+    width: 320px;
     height: 330px;
     transition: all 0.3s ease;
     position: relative;
