@@ -566,7 +566,7 @@
 }
 
 /* smaller screens  */
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 527px) {
   .Icons-cont {
     flex-direction: column;
     align-items: flex-start;
@@ -586,7 +586,7 @@
   .right_hero_sec {
     background-image: url("../images/ea422c48-7494-43ee-882a-cbec41f48256_removalai_preview.png");
     width: 291px;
-    height: 90vh;
+    height: 87vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 80px;
@@ -596,26 +596,27 @@
   .right_hero_sec::after {
     content: "";
     width: 290px;
-    height: 90vh;
+    height: 87vh;
     position: absolute;
     left: 0;
-    background-color: rgb(42, 9, 226);
+    background-color: rgb(9, 56, 226);
     opacity: 0.94;
   }
 
   .right_hero_sec2 {
     /* background-image: url("../images/ea422c48-7494-43ee-882a-cbec41f48256_removalai_preview.png"); */
-    width: 200px;
-    height: 90vh;
+    width: 150px;
+    height: 87vh;
+    position: relative;
     background-repeat: no-repeat;
     background-position-y: 140px;
     background-position-x: 0px;
-    /* border: 2px solid rgb(204, 0, 255); */
+    /* border: 2px solid rgb(255, 0, 0); */
   }
   .right_hero_sec2::after {
     content: "";
-    width: 200px;
-    height: 90vh;
+    width: 125px;
+    height: 87vh;
     position: absolute;
     right: 0;
     top: 0;
@@ -628,26 +629,77 @@
     top: 243px;
     left: 43px;
     z-index: 2;
-    width: 330px;
-  }
-
-  .review-cont {
-    top: 280px;
-    left: 50px;
-    display: none;
+    width: 375px;
   }
 
   .intro-txt {
-    font-size: 2rem;
-    line-height: 1.2;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 2;
+    font-size: 1.9rem;
+    color: #fff;
+    font-style: italic;
+    font-weight: 800;
+    width: 17ch;
+    line-height: 40px;
+    left: 20px;
+  }
+
+  .txt1 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    z-index: 2;
+    color: #fff;
+  }
+
+  .right-ic {
+    display: none;
+  }
+
+  .btn-cont {
+    top: 280px;
+  }
+
+  .btn2 {
+    width: 100px;
+    height: 35px;
+    left: 0;
+  }
+  .review-cont {
+    top: 480px;
+    left: 10px;
+    display: none;
   }
   .txt2 {
-    width: 90%;
+    width: 22ch;
+    top: 210px;
+    left: 20px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
+
   .Icons-cont {
     flex-direction: column;
     gap: 10px;
   }
+
+  .product-card {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 25px;
+    width: 300px;
+    height: 330px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(1, 1fr);
   }
