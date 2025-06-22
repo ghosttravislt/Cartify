@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerece</title>
+    <link rel="stylesheet" href="./Assets/Styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <nav class="header-nav">
+        <i class="fa-solid fa-align-left icon"></i>
+        <div class="logo">Farm.co</div>
+        <div class="Icons-cont">
+          <button class="btn">
+            <img src="./Assets/images/ic.png" alt="" class="icon1" />
+          </button>
+          <button class="btn">
+            <img src="./Assets/images/1c2.png" alt="" class="icon1" />
+          </button>
+          <img
+            src="./Assets/images/portrait-handsome-young-man-with-arms-crossed-holding-white-headphone-around-his-neck.jpg"
+            alt=""
+            class="profile"
+          />
+        </div>
+      </nav>
+    </header>
+    <main class="hero">
+      <section class="right_hero_sec">
+        <p class="txt1">Buy fresh produce</p>
+        <p class="intro-txt">CRUNCH. BURST. WOW. ..TASTE THE FARM!</p>
+        <img src="./Assets/images/right-image.png" alt="" class="right-image" />
+        <p class="txt2">
+          Picked at peak ripeness, packed with flavor — our fruits and veggies
+          go from soil to shelf with zero shortcuts. No chemicals. No corners
+          cut. Just honest food, grown the right way.
+        </p>
+        <div class="btn-cont">
+          <i class="fi fi-ts-arrow-right right-ic"></i>
+          <button class="btn2">Start Shoping</button>
+        </div>
+        <div class="review-cont">
+          <img
+            src="./Assets/images/portrait-handsome-young-man-with-arms-crossed-holding-white-headphone-around-his-neck.jpg"
+            alt=""
+            class="profile1"
+          />
+          <img src="./Assets/images/images1.jpeg" alt="" class="profile2" />
+          <img src="./Assets/images/images2.jpeg" alt="" class="profile3" />
+        </div>
+      </section>
+      <section class="right_hero_sec2"></section>
+    </main>
+
+    <section class="cart-sec">
+      <div class="cart-count" id="cartCount">0</div>
+      <div class="notification" id="notification">Added to cart!</div>
+
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/beef.jpg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Crater Impact</div>
+            <div class="product-footer">
+              <div class="product-price">$77.65</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Crater Impact', 77.65)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/cabbage.jpg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/carrot.webp" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/cauliflower.webp"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/fish.webp" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/onions.jpg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/black-eye beans.webp"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/ripe-plantain1.jpg"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/sweet potato.jpeg"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/sowgreen-green-cocoyamleaf1.jpg"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/taro.jpg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/yams.jpeg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/tomatoes.jpeg"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/smoked-tilapia.jpg"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/green-plantain.png"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/banana.jpg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/front-view-brown-chicken-eggs.webp"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./Assets/images/Mango.jpg" class="cart-img" alt="" />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/watermeloen_2.jpg"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="./Assets/images/Whole-Chicken.jpg.webp"
+                class="cart-img"
+                alt=""
+              />
+            </div>
+            <div class="product-category">Men's Shoes</div>
+            <div class="product-name">Air Max Pre-Day</div>
+            <div class="product-footer">
+              <div class="product-price">$240.70</div>
+              <button
+                class="add-to-cart"
+                onclick="addToCart(this, 'Air Max Pre-Day', 240.70)"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
