@@ -208,6 +208,6 @@
   z-index: 2;
 }
 
-.notification.show {
+.sign-up-notification.show {
   transform: translateY(0px);
 }

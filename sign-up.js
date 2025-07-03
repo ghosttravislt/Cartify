@@ -6,6 +6,17 @@ const confirmPassword = document.querySelector("#confirmPassword");
 const dbpassword = "Nockyrich154k";
 const dbemail = "hunchocools@gmail.com";
 
+// sign up alert
+function alertFunction() {
+  const notifications = document.querySelector(".sign-up-notification");
+  console.log(notifications);
+  notifications.style.transform = "translateY(100px)";
+  setTimeout(() => {
+    notifications.style.transform = "translateY(0px)";
+  }, 2000);
+  console.log("hello");
+}
+
 const pb = new PocketBase("http://127.0.0.1:8090");
 console.log(pb);
 
@@ -13,15 +24,10 @@ console.log(pb);
 
 console.log(userName.value);
 
-const signUpForm = document.getElementById("signupForm");
-const notification = document.getElementById("notification");
-notification.classList.add("show");
-
-// if(){
-
-// }
+const signUpForm = document.querySelector("#signupForm");
 
 signUpForm.addEventListener("submit", async (formEvent) => {
+  formEvent.preventDefault();
   let userData = {
     name: `${userName.value}`,
     email: `${email.value}`,
@@ -29,20 +35,20 @@ signUpForm.addEventListener("submit", async (formEvent) => {
     password: `${password.value}`,
     confirmPassword: `${confirmPassword.value}`,
   };
+  console.log(userData);
 
-  if (password.value !== confirmPassword.value) {
-    alert("Passwords do not match!");
-    return;
+  if (password === null) {
+    console.log();
   }
-  formEvent.preventDefault();
+
   try {
     const record = pb.collection("cartifyUsers").create(userData);
     await record;
-
+    alertFunction();
     console.log("User created:", record);
     setTimeout(() => {
       window.location.href = "index.html";
-    }, 2000);
+    }, 3000);
   } catch (error) {
     console.error("Error creating user:", error);
     console.log("Sign up failed: " + error.message);
