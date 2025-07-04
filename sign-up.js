@@ -2,9 +2,8 @@ const userName = document.querySelector("#name");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirmPassword");
-
-const dbpassword = "Nockyrich154k";
-const dbemail = "hunchocools@gmail.com";
+const loader = document.querySelector(".loader");
+const mainPage = document.querySelector(".main-log");
 
 // sign up alert
 function alertFunction() {
@@ -13,6 +12,28 @@ function alertFunction() {
   notifications.style.transform = "translateY(100px)";
   setTimeout(() => {
     notifications.style.transform = "translateY(0px)";
+  }, 2000);
+  console.log("hello");
+}
+function alertFunctionError() {
+  const notificationError = document.querySelector(
+    ".sign-up-notification-error"
+  );
+  console.log(notificationError);
+  notificationError.style.transform = "translateY(100px)";
+  setTimeout(() => {
+    notificationError.style.transform = "translateY(0px)";
+  }, 2000);
+  console.log("hello");
+}
+function alertFunctionErrorPassword() {
+  const notificationError = document.querySelector(
+    ".sign-up-notification-error-pass"
+  );
+  console.log(notificationError);
+  notificationError.style.transform = "translateX(-450px)";
+  setTimeout(() => {
+    notificationError.style.transform = "translateX(0px)";
   }, 2000);
   console.log("hello");
 }
@@ -36,22 +57,32 @@ signUpForm.addEventListener("submit", async (formEvent) => {
     confirmPassword: `${confirmPassword.value}`,
   };
   console.log(userData);
+  console.log(password.valueMissing);
 
-  if (password === null) {
-    console.log();
+  // checking password field is not empty
+  if (!password.value.trim() || !confirmPassword.value.trim()) {
+    alertFunctionError();
+    alertFunctionErrorPassword();
   }
 
-  try {
-    const record = pb.collection("cartifyUsers").create(userData);
-    await record;
-    alertFunction();
-    console.log("User created:", record);
-    setTimeout(() => {
-      window.location.href = "index.html";
-    }, 3000);
-  } catch (error) {
-    console.error("Error creating user:", error);
-    console.log("Sign up failed: " + error.message);
-    console.log(pb);
+  if (password.value == confirmPassword.value) {
+    try {
+      const record = pb.collection("cartifyUsers").create(userData);
+      await record;
+      alertFunction();
+      console.log("User created:", record);
+      setTimeout(() => {
+        loader.style.display = "flex";
+        mainPage.style.display = "none";
+      }, 1000);
+      setTimeout(() => {
+        loader.style.display = "none";
+        window.location.href = "index.html";
+      }, 5000);
+    } catch (error) {
+      console.error("Error creating user:", error);
+      console.log("Sign up failed: " + error.message);
+      console.log(pb);
+    }
   }
 });

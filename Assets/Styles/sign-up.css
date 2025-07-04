@@ -207,7 +207,53 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
-
-.sign-up-notification.show {
+.sign-up-notification-error {
+  position: fixed;
+  top: -60px;
+  left: 520px;
+  background: #c51c1c;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
   transform: translateY(0px);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.sign-up-notification-error-pass {
+  position: fixed;
+  top: 550px;
+  right: -400px;
+  background: #c85454;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transform: translateX(0px);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.show {
+  transform: translateY(0px);
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid rgb(0, 2, 12);
+  border-right-color: #9816bc;
+  animation: l2 1s infinite linear;
+  position: absolute;
+  top: 300px;
+  left: 650px;
+  display: none;
+}
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
 }

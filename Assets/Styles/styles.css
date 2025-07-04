@@ -362,7 +362,7 @@ html {
   padding: 15px 20px;
   border-radius: 10px;
   font-weight: 600;
-  transform: translateX(600px);
+  transform: translateX(1200px);
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 2;
