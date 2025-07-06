@@ -471,12 +471,12 @@ html {
   }
 
   .container {
-    border: 2px solid rgb(255, 251, 0);
+    /* border: 2px solid rgb(255, 251, 0); */
   }
 
   .hero {
     width: 200px;
-    border: 2px solid rgb(255, 30, 0);
+    /* border: 2px solid rgb(255, 30, 0); */
   }
 }
 
@@ -574,12 +574,12 @@ html {
 
   .product-grid {
     grid-template-columns: repeat(1, 1fr);
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-left: 20px;
   }
 
   .container {
-    border: 2px solid rgb(255, 251, 0);
+    /* border: 2px solid rgb(255, 251, 0); */
   }
 
   .hero {
