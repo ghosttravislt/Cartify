@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/Assets/Styles/cart.css" />
+  </head>
+  <body>
+    <h1>Your Cart</h1>
+    <div class="main-cart-cont">
+      <div class="container">
+        <div class="cart">
+          <!-- Product Item -->
+          <div class="cart-item">
+            <img src="./Assets/images/banana.jpg" alt="Product Image" />
+            <div class="item-details">
+              <h2>Product Name</h2>
+              <p>$25.00</p>
+              <div class="quantity-controls">
+                <button class="minus">-</button>
+                <span>1</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+          </div>
+          <div class="cart-item">
+            <img src="./Assets/images/banana.jpg" alt="Product Image" />
+            <div class="item-details">
+              <h2>Product Name</h2>
+              <p>$25.00</p>
+              <div class="quantity-controls">
+                <button class="minus">-</button>
+                <span>1</span>
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <button class="remove-btn">Remove</button>
+          </div>
+
+          <!-- Cart Summary -->
+        </div>
+      </div>
+      <div class="cart-summary">
+        <h2>Summary</h2>
+        <p>Subtotal: $25.00</p>
+        <p>Tax: $2.50</p>
+        <h3>Total: $27.50</h3>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+    <script src="./cart.js"></script>
+  </body>
+</html>
