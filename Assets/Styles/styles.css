@@ -359,6 +359,8 @@ html {
   right: 5px;
   background: #48bb78;
   color: white;
+  width: 400px;
+  height: 100px;
   padding: 15px 20px;
   border-radius: 10px;
   font-weight: 600;
@@ -366,6 +368,10 @@ html {
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .notification.show {
